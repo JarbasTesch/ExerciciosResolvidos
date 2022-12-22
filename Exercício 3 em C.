@@ -1,0 +1,24 @@
+//Considere que a senha correta é o valor 2742.
+
+#include <stdio.h>
+int main(){
+    int senhafixa = 2742;
+    int acertou = 0;
+    int senhachute;
+    
+    do{
+        printf("\n\nQual a senha?\n");
+        scanf("%d", &senhachute);
+        
+        if(senhachute == senhafixa){
+            acertou = 1;
+            continue;
+        }
+        else{
+            printf("Senha inválida!\n");
+        }
+    }
+    while(acertou == 0);
+
+    printf("Acesso permitido.\n");
+} 
