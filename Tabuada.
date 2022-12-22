@@ -1,1 +1,20 @@
+#include <stdio.h>
+int main(){
 
+    int escolha;
+        printf("Digite um número para a tabuada:\n");
+        scanf("%d", &escolha);
+
+    int limite;
+        printf("\nAté qual algarismo quer que o programa faça a tabuada do %d?\n", escolha);
+        scanf("%d", &limite);
+
+    printf("\nTabuada do número %d; de 1 até %d:\n", escolha, limite);
+    
+    for(int i = 1; i<= limite; i++){
+        int constante = 1;
+         int resultado = i * escolha;
+        printf("%d x %d = %d\n", i, escolha, resultado);
+    }
+    
+}
