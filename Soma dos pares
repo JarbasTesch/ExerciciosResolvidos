@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+
+    int soma;
+    int x;
+    printf("\n\nVamos somar os 5 pares a partir do número: \n");
+    scanf("%d", &x);
+
+    if (x % 2 != 0){
+        x = abs(x) + 1;
+    }
+    
+    soma = 5 * x + 20;
+    
+    printf("\n\nA soma dos 5 pares é: %d", soma);
+}
